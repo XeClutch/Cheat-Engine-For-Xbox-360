@@ -1,0 +1,13 @@
+c:\users\s7clutch\documents\visual studio 2013\Projects\Cheat Engine for Xbox 360\Cheat Engine for Xbox 360\bin\Debug\Cheat Engine for Xbox 360.exe.config
+c:\users\s7clutch\documents\visual studio 2013\Projects\Cheat Engine for Xbox 360\Cheat Engine for Xbox 360\bin\Debug\Cheat Engine for Xbox 360.exe
+c:\users\s7clutch\documents\visual studio 2013\Projects\Cheat Engine for Xbox 360\Cheat Engine for Xbox 360\bin\Debug\Cheat Engine for Xbox 360.pdb
+c:\users\s7clutch\documents\visual studio 2013\Projects\Cheat Engine for Xbox 360\Cheat Engine for Xbox 360\obj\Debug\Cheat Engine for Xbox 360.csprojResolveAssemblyReference.cache
+c:\users\s7clutch\documents\visual studio 2013\Projects\Cheat Engine for Xbox 360\Cheat Engine for Xbox 360\obj\Debug\Cheat_Engine_for_Xbox_360.Properties.Resources.resources
+c:\users\s7clutch\documents\visual studio 2013\Projects\Cheat Engine for Xbox 360\Cheat Engine for Xbox 360\obj\Debug\Cheat Engine for Xbox 360.csproj.GenerateResource.Cache
+c:\users\s7clutch\documents\visual studio 2013\Projects\Cheat Engine for Xbox 360\Cheat Engine for Xbox 360\obj\Debug\Cheat Engine for Xbox 360.exe
+c:\users\s7clutch\documents\visual studio 2013\Projects\Cheat Engine for Xbox 360\Cheat Engine for Xbox 360\obj\Debug\Cheat Engine for Xbox 360.pdb
+c:\users\s7clutch\documents\visual studio 2013\Projects\Cheat Engine for Xbox 360\Cheat Engine for Xbox 360\obj\Debug\Cheat_Engine_for_Xbox_360.MainForm.resources
+c:\users\s7clutch\documents\visual studio 2013\Projects\Cheat Engine for Xbox 360\Cheat Engine for Xbox 360\obj\Debug\Cheat_Engine_for_Xbox_360.AboutForm.resources
+c:\users\s7clutch\documents\visual studio 2013\Projects\Cheat Engine for Xbox 360\Cheat Engine for Xbox 360\obj\Debug\Cheat_Engine_for_Xbox_360.EntryForm.resources
+c:\users\s7clutch\documents\visual studio 2013\Projects\Cheat Engine for Xbox 360\Cheat Engine for Xbox 360\obj\Debug\Cheat_Engine_for_Xbox_360.ChangeValueForm.resources
+c:\users\s7clutch\documents\visual studio 2013\Projects\Cheat Engine for Xbox 360\Cheat Engine for Xbox 360\obj\Debug\Cheat_Engine_for_Xbox_360.MemoryForm.resources
