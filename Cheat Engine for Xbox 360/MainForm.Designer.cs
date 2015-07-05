@@ -52,6 +52,8 @@
             this.saved_list_type = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.saved_list_value = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.saved_list_context = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.saved_list_context_browse = new System.Windows.Forms.ToolStripMenuItem();
+            this.saved_list_context_change = new System.Windows.Forms.ToolStripMenuItem();
             this.saved_list_context_edit = new System.Windows.Forms.ToolStripMenuItem();
             this.saved_list_context_remove = new System.Windows.Forms.ToolStripMenuItem();
             this.scan_first = new System.Windows.Forms.Button();
@@ -70,12 +72,10 @@
             this.saved_add = new System.Windows.Forms.Button();
             this.scan_progress = new System.Windows.Forms.ProgressBar();
             this.scan_new = new System.Windows.Forms.Button();
-            this.saved_list_context_change = new System.Windows.Forms.ToolStripMenuItem();
-            this.saved_list_context_browse = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.refresh_do = new System.Windows.Forms.CheckBox();
-            this.refresh_interval = new System.Windows.Forms.NumericUpDown();
             this.refresh_interval_lbl = new System.Windows.Forms.Label();
+            this.refresh_interval = new System.Windows.Forms.NumericUpDown();
+            this.refresh_do = new System.Windows.Forms.CheckBox();
             this.strip.SuspendLayout();
             this.found_list_context.SuspendLayout();
             this.saved_list_context.SuspendLayout();
@@ -204,6 +204,7 @@
             this.connect.TabIndex = 2;
             this.connect.Text = "Connect to Xbox 360";
             this.connect.UseVisualStyleBackColor = true;
+            this.connect.Click += new System.EventHandler(this.connect_Click);
             // 
             // connect_ip
             // 
@@ -262,6 +263,20 @@
             this.saved_list_context_remove});
             this.saved_list_context.Name = "saved_list_context";
             this.saved_list_context.Size = new System.Drawing.Size(234, 92);
+            // 
+            // saved_list_context_browse
+            // 
+            this.saved_list_context_browse.Name = "saved_list_context_browse";
+            this.saved_list_context_browse.Size = new System.Drawing.Size(233, 22);
+            this.saved_list_context_browse.Text = "Browse this region of memory";
+            this.saved_list_context_browse.Click += new System.EventHandler(this.saved_list_context_browse_Click);
+            // 
+            // saved_list_context_change
+            // 
+            this.saved_list_context_change.Name = "saved_list_context_change";
+            this.saved_list_context_change.Size = new System.Drawing.Size(233, 22);
+            this.saved_list_context_change.Text = "Change value of entry";
+            this.saved_list_context_change.Click += new System.EventHandler(this.saved_list_context_change_Click);
             // 
             // saved_list_context_edit
             // 
@@ -449,20 +464,6 @@
             this.scan_new.UseVisualStyleBackColor = true;
             this.scan_new.Click += new System.EventHandler(this.scan_new_Click);
             // 
-            // saved_list_context_change
-            // 
-            this.saved_list_context_change.Name = "saved_list_context_change";
-            this.saved_list_context_change.Size = new System.Drawing.Size(233, 22);
-            this.saved_list_context_change.Text = "Change value of entry";
-            this.saved_list_context_change.Click += new System.EventHandler(this.saved_list_context_change_Click);
-            // 
-            // saved_list_context_browse
-            // 
-            this.saved_list_context_browse.Name = "saved_list_context_browse";
-            this.saved_list_context_browse.Size = new System.Drawing.Size(233, 22);
-            this.saved_list_context_browse.Text = "Browse this region of memory";
-            this.saved_list_context_browse.Click += new System.EventHandler(this.saved_list_context_browse_Click);
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.refresh_interval_lbl);
@@ -475,15 +476,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Refresh";
             // 
-            // refresh_do
+            // refresh_interval_lbl
             // 
-            this.refresh_do.AutoSize = true;
-            this.refresh_do.Location = new System.Drawing.Point(9, 21);
-            this.refresh_do.Name = "refresh_do";
-            this.refresh_do.Size = new System.Drawing.Size(100, 17);
-            this.refresh_do.TabIndex = 0;
-            this.refresh_do.Text = "Refresh values";
-            this.refresh_do.UseVisualStyleBackColor = true;
+            this.refresh_interval_lbl.AutoSize = true;
+            this.refresh_interval_lbl.Location = new System.Drawing.Point(6, 46);
+            this.refresh_interval_lbl.Name = "refresh_interval_lbl";
+            this.refresh_interval_lbl.Size = new System.Drawing.Size(113, 13);
+            this.refresh_interval_lbl.TabIndex = 2;
+            this.refresh_interval_lbl.Text = "Refresh interval (ms):";
             // 
             // refresh_interval
             // 
@@ -507,14 +507,15 @@
             0,
             0});
             // 
-            // refresh_interval_lbl
+            // refresh_do
             // 
-            this.refresh_interval_lbl.AutoSize = true;
-            this.refresh_interval_lbl.Location = new System.Drawing.Point(6, 46);
-            this.refresh_interval_lbl.Name = "refresh_interval_lbl";
-            this.refresh_interval_lbl.Size = new System.Drawing.Size(113, 13);
-            this.refresh_interval_lbl.TabIndex = 2;
-            this.refresh_interval_lbl.Text = "Refresh interval (ms):";
+            this.refresh_do.AutoSize = true;
+            this.refresh_do.Location = new System.Drawing.Point(9, 21);
+            this.refresh_do.Name = "refresh_do";
+            this.refresh_do.Size = new System.Drawing.Size(100, 17);
+            this.refresh_do.TabIndex = 0;
+            this.refresh_do.Text = "Refresh values";
+            this.refresh_do.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
