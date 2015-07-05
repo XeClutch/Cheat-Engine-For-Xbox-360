@@ -1,6 +1,4 @@
-﻿#define TESTING
-
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -41,7 +39,7 @@ namespace Cheat_Engine_for_Xbox_360
                         {
                             uint addr = uint.Parse(found_list.Items[i].Text.Replace("0x", ""), NumberStyles.HexNumber);
                             if (type == "BYTE") val = console.Read_Byte(addr).ToString("X2");
-                            else if (type == "BYTE*") val = ByteArrayToString(console.Read_Byte(addr, (uint)found_list.Items[i].SubItems[2].Text.Length));
+                            else if (type == "BYTE*") val = ByteArrayToString(console.Read_Byte(addr, (uint)found_list.Items[i].SubItems[2].Text.Length / 2));
                             else if (type == "WORD") val = (scan_value_ishex.Checked ? "0x" + console.Read_UInt16(addr).ToString("X4") : console.Read_UInt16(addr).ToString());
                             else if (type == "DWORD") val = (scan_value_ishex.Checked ? "0x" + console.Read_UInt32(addr).ToString("X8") : console.Read_UInt32(addr).ToString());
                             else if (type == "QWORD") val = (scan_value_ishex.Checked ? "0x" + console.Read_UInt64(addr).ToString("X16") : console.Read_UInt64(addr).ToString());
@@ -59,7 +57,7 @@ namespace Cheat_Engine_for_Xbox_360
                             string val = "";
                             uint addr = uint.Parse(saved_list.Items[i].Text.Replace("0x", ""), NumberStyles.HexNumber);
                             if (type == "BYTE") val = console.Read_Byte(addr).ToString("X2");
-                            else if (type == "BYTE*") val = ByteArrayToString(console.Read_Byte(addr, uint.Parse(type.Replace("STRING (", "").Replace(")", "")) / 2));
+                            else if (type.StartsWith("BYTE*")) val = ByteArrayToString(console.Read_Byte(addr, uint.Parse(type.Replace("BYTE* (", "").Replace(")", "")) / 2));
                             else if (type == "WORD") val = (scan_value_ishex.Checked ? "0x" + console.Read_UInt16(addr).ToString("X4") : console.Read_UInt16(addr).ToString());
                             else if (type == "DWORD") val = (scan_value_ishex.Checked ? "0x" + console.Read_UInt32(addr).ToString("X8") : console.Read_UInt32(addr).ToString());
                             else if (type == "QWORD") val = (scan_value_ishex.Checked ? "0x" + console.Read_UInt64(addr).ToString("X16") : console.Read_UInt64(addr).ToString());
